@@ -1,0 +1,65 @@
+/***********
+* 页面样式
+***********/
+
+/* =========
+   基本默认值
+   ========= */
+
+html,body,div,ul,li,img{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html {
+    font-size: 625%;
+    color: #222;
+}
+/* 文字选中后的默认样式 */
+::selection{
+    background-color: #ff0000;
+    text-shadow: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* =========
+   基本默认值
+   ========= */
+
+/* 水平居中 */
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* 水平垂直居中 */
+.center{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    zoom: 1; /*兼容IE6 7*/
+}
+.pull-left{
+    float: left !important;
+}
+.pull-right{
+    float: right !important;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .center-block {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    html {
+        font-size: 625%;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        margin: 10px 0;
+        background: lightslategray;
+        box-sizing: border-box;
+        font-size: 0;
+    }
+
+    .content {
+        /* display: inline-block; */
+        width: 33.33333%;
+        height: 50px;
+        background: lavender;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .rem {
+        /* line-height: 3rem; */
+        line-height: .3rem;
+        font-size: .1rem;
+        background: lightblue;
+    }
+
+    .image {
+        background: pink;
+    }
+
+    .center {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+</style>
+
+<body>
+    <div class="rem">
+        <span>12px</span>
+    </div>
+    <div class="container">
+        <div class="content center-block">item1</div>
+        <div class="content">item2</div>
+        <div class="content">item3</div>
+    </div>
+</body>
+
+</html>

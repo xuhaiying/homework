@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding:0;
+            margin:0;
+        }
+        li {
+            list-style: none; 
+        }
+        ul li {
+            display: inline-block;
+        }
+        /* ul li + li {
+            border-left: 1px solid #ccc;
+        } */
+        /* ul li ~ li{
+            background: yellow;
+        } */
+        /* div[class|="home"]{
+            width: 100px;
+            height: 100px;
+            background: red;
+        } */
+        .nth p:nth-child(1){
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>首页</li>
+        <li>产品介绍</li>
+        <li>开发文档</li>
+        <li>帮助</li>
+        <li>关于我们</li>
+    </ul>
+    <div class="home-container"></div>
+    <div class="home-content"></div>
+    <div class="home content">aaa</div>
+
+    <div class="nth">
+        <div>div</div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+    </div>
+</body>
+</html>
